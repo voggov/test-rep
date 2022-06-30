@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: yellow;
+		}
+		li {
+			list-style-type: none;
+		}
+		ol {
+			counter-reset: number1;
+		}
+		ol li::before {
+			counter-increment: number1;
+			content: counter(number1);
+
+		}
+		ol ol{
+			counter-reset: number2;
+		}
+		ol ol li::before {
+			counter-increment: number2;
+			content: counter(number1) '.' counter(number2) ' ';
+
+		}
+		
+	</style>
+</head>
+<body>
+	<ol>
+		<li>Пункт
+			<ol>
+				<li>Подпункт</li>
+				<li>Подпункт</li>
+				<li>Подпункт</li>
+			</ol>
+			
+		</li>
+		<li>Пункт
+			<ol>
+				<li>Подпункт</li>
+				<li>Подпункт</li>
+				<li>Подпункт</li>
+			</ol>
+			
+		</li>
+	</ol>
+	
+</body>
+</html>

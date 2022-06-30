@@ -1,0 +1,50 @@
+*{
+	color: white;
+	float: left;
+}
+.back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background: url("../images/background.jpg");
+	background-position: center;
+
+	overflow: hidden;
+}
+.words {
+	height: 100%;
+	width: 35%;
+}
+h2 {
+	margin: 15% 0 0 15%;
+	font-family: Impact;
+	font-size: 10em;
+}
+.description {
+	margin: 0 15% 5% 15%;
+	font-size: 0.9em;
+}
+.btn {
+	background-color: white;
+	margin: 0 15% 3% 15%;
+	width: 250px;
+	height: 70px;
+	border-radius: 10px;
+	text-align: center;
+}
+.btn:hover {
+	background-color: gray;
+	cursor: pointer;
+}
+h4{
+	float: none;
+	padding: 3px 65px;
+	color: black;
+}
+.picture {
+	width: 65%;
+	height: 100%;
+}
